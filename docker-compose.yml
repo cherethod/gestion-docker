@@ -53,10 +53,3 @@ services:
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     ports:
       - "81:80"
-
-  mailhog:
-    image: mailhog/mailhog
-    container_name: ${PROJECT_NAME}-mailhog
-    ports:
-      - "82:8025"
-      - "1025:1025"
