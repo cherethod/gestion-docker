@@ -27,3 +27,5 @@ RUN "date"
 RUN docker-php-ext-install pdo pdo_mysql
 
 RUN echo 'alias sf="php app/console"' >> ~/.bashrc
+
+COPY gestion.sql /docker-entrypoint-initdb.d/
